@@ -11,11 +11,10 @@ const config = {
         "getTodayDrawStatus": "/growth_api/v1/lottery_config/get",
         "dipLucky": "/growth_api/v1/lottery_lucky/dip_lucky"
     },
-    "sendNews": "https://sctapi.ftqq.com/SCT104537T8R8ctR89RWpe1HYf1YsYo5k6.send",
+    "sendNews": "",
     "queryNewStatu": "https://sctapi.ftqq.com/push?id={pushid}&readkey={readkey}",
     "sendKey": "",
-    "cookie":"MONITOR_WEB_ID=2ef8e281-86e5-481d-9310-18b9371556f5; _ga=GA1.2.1674301414.1635927374; passport_csrf_token_default=eae9182686e65508a3098a0afe384f16; passport_csrf_token=eae9182686e65508a3098a0afe384f16; n_mh=gA1H8H-EvYzLDlRpiNxoiB2qLi6uLFkWNofMUdKvIho; sid_guard=2e897d90ed59140ee688552d3c5bbc66|1636076633|5184000|Tue,+04-Jan-2022+01:43:53+GMT; uid_tt=f3bca58ffdb330e5194b7b110684bcd7; uid_tt_ss=f3bca58ffdb330e5194b7b110684bcd7; sid_tt=2e897d90ed59140ee688552d3c5bbc66; sessionid=2e897d90ed59140ee688552d3c5bbc66; sessionid_ss=2e897d90ed59140ee688552d3c5bbc66; sid_ucp_v1=1.0.0-KDY1ZTc3MDA1MTU4OGFhYmI5OGJmN2E5MWQ5MTA4YWE5ZTEzNDA0YjMKFgj46IDA_fXFAxDZmJKMBhiwFDgIQAsaAmxmIiAyZTg5N2Q5MGVkNTkxNDBlZTY4ODU1MmQzYzViYmM2Ng; ssid_ucp_v1=1.0.0-KDY1ZTc3MDA1MTU4OGFhYmI5OGJmN2E5MWQ5MTA4YWE5ZTEzNDA0YjMKFgj46IDA_fXFAxDZmJKMBhiwFDgIQAsaAmxmIiAyZTg5N2Q5MGVkNTkxNDBlZTY4ODU1MmQzYzViYmM2Ng; _tea_utm_cache_2608={\"utm_source\"\:\"feed_1\",\"utm_medium\"\:\"feed\",\"utm_campaign\"\:\"nzzj_yq_2021\"}; _gid=GA1.2.361882890.1640323586"
-}
+    "cookie":""
 //主函数
 const main = async ()=> {
     // let {err_msg} = await checkIn();
