@@ -1,6 +1,9 @@
 // 引入依赖
 const axios = require('axios')
 
+//读取环境变量
+var value = process.env.cookie 
+
 // 参数配置
 const config = {
     "baseURL": "https://api.juejin.cn",
@@ -15,7 +18,7 @@ const config = {
     "queryNewStatu": "https://sctapi.ftqq.com/push?id={pushid}&readkey={readkey}",
     "sendKey": "",
 <<<<<<< HEAD
-    "cookie":"ae9182686e=gA1H8HEzNDA0YjMKFgj46IDA_fXFAxDZmJKMBhiwFDgIQA\"}; _gid=GA1.2.361882890.1640323586"
+    "cookie":value
 }
 
 
