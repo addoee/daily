@@ -114,7 +114,7 @@ const dipLucky = async ()=>{
 const sendMsg = async (signMsg, drawMsg, dipMsg) => {
     if(!signMsg &  !drawMsg & !dipMsg) return;
     let {sendNews, queryNewStatu} = config;
-    msg = "今日签到成功，钻石数："+signMsg.data.sum_point+","+"获得了"+drawMsg.data.lottery_name+",获取到："+dipMsg.data.dip_value+"点福气，当前福气值："+dipMsg.data.total_value
+    msg = "签到成功,钻石数："+signMsg.data.sum_point+","+"抽奖成功，获取到："+drawMsg.data.lottery_name+",获取到："+drawMsg.data.draw_lucky_value+"点福气，当前福气值："+drawMsg.data.total_lucky_value
     let {data} = await axios({url: sendNews, method: 'post', params:{'title':'掘金消息通知', 'desp':msg}})
     if(data.err_no){
         //查询是否推送完成
