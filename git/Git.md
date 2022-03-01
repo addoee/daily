@@ -30,7 +30,7 @@ git config --global user.name "your name"
 git config --global user.email "your email"
 ```
 
-##
+#
 
 ### 2.使用
 
@@ -58,7 +58,7 @@ git config --global user.email "your email"
 
 #### 2.2 版本回退
 
-我们在创建本地仓库的时候已经创建了一个readme.md的文件，我们通过 ``git add readme.md `` 添加这个文件到暂存区，通过``git commit -m "explain"`` 将暂存区的文件提交到git分支。
+我们在创建本地仓库的时候已经创建了一个readme.md的文件，我们通过 ``git add readme.md `` 添加这个文件到暂存区，通过``git commit -m "explain"`` 将暂存区的文件提交到git分支。
 
 现在我们将readme.md中文件内容再次修改提交一次。
 
@@ -104,7 +104,7 @@ git reser --hard "c461ebe"
 
 根据创建成功的信息找到“***\*id_rsa.pub\****”这个公钥文件，复制到github-点击头像--settings--ssh and GPG keys--new SSH key ,添加我们复制的内容，起个名称即可。
 
-####  3.1推送远程仓库时忽略不必要文件
+####  3.2推送远程仓库时忽略不必要文件
 
 在本地仓库运行``git bash here`` ,执行命令``touch .gitignore`` ,然后仓库中编辑创建的这个文件。命令格式如下：
 
@@ -115,39 +115,17 @@ git reser --hard "c461ebe"
  !*.c , !/dir/subdir/     !开头表示不过滤
  *.[oa]    支持通配符：过滤repo中所有以.o或者.a为扩展名的文件.
 
-##### 三.使用远程仓库
-
-先检查我们本地是否有ssh密钥
-
-``ls -al ~/.ssh`` 
-
-如果没有的话，生成密钥：
-
-``ssh-keygen -t ed25519 -C "your_email@example.com``
-
-这里需要替换成自己的github邮箱。一路回车，密钥会保存在：
-
-``C:\Users\admin\.ssh`` 
-
-至少我的是，如果你的用户名也和我一样是admin的话。
-
-接下来添加github上。点自己大头--Settings--SSH and GPG keys--New SSH key ,将本的id_rsa.pub文件记事本打开，复制密钥保存到GitHub上就完成了。
-
-接下里测试下连接是否正常：
-
-``ssh -T git@github.com`` 
-
-![20190619221201430](../img/20190619221201430.png)
-
-  完美！
-
-如果出现弹框输入自己的账号和密码验证一次就行。
-
-我们可以用以下语法将我们提交到本地仓库的文件推送到GitHub远程仓库上。
-
-``git push origin master``  
-
 我遇到的是openssl超时错误，先检查下自己电脑有没有开代理可以先将代理关闭。如果不行，我们可以试下在本地仓库中``.git`` 文件夹下有个config文件，打开将url那个https改为http，再试一次。
+
+#### 3.3从远程仓库克隆
+
+利用``git clone`` 从远程仓库克隆到本地。
+
+如我自己的仓库，我们使用如下命令克隆
+
+```
+git clone git@github.com:addoee/daily.git
+```
 
 
 
