@@ -1,9 +1,8 @@
 <template>
   <div id="app">
+    hello app!
     <img alt="Vue logo" src="./assets/logo.png">
-    gfdfgfghjkjhjkl
-    jhgfdfgh
-    hgfdfgh
+    
   </div>
 </template>
 
